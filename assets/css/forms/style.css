@@ -42,3 +42,8 @@ h1 {
     font-size: 15px;
     color: #848484;
 }
+
+
+.form-floating input{
+    display: inline-block;
+  }
