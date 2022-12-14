@@ -58,9 +58,12 @@
 
             form.addEventListener('submit', (event) => {
                event.preventDefault();
+               // diferente de nullo
                nameValidate();
-               emailValidate();
+               emailValidate(); 
                passwordValidate();
+
+               // comparar as senhas
                comparePassword();
             });
 
@@ -68,7 +71,6 @@
                 campos[index].style.border = '2px solid #e63656';
                 spans[index].style.display = 'block';
             }
-
             function removeError(index) {
                 campos[index].style.border = '';
                 spans[index].style.display = 'none';

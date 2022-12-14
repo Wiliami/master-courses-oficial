@@ -46,4 +46,9 @@ h1 {
 
 .form-floating input{
     display: inline-block;
-  }
+}
+
+div img {
+    height: 50px;
+    width: 50px;
+}
