@@ -17,6 +17,8 @@ class SibeBar extends HTMLElement {
     `;
 
 
+    // adicionando conteúdo aqui nesse component
+
    } 
 }
 
