@@ -7,21 +7,21 @@ class SibeBar extends HTMLElement {
 
     build() {
         const shadow = this.attachShadow({ mode: 'open' }); 
-        // shadow.appendChild(this.getLinkHead());
+        shadow.appendChild(this.getLinkHead());
         shadow.appendChild(this.styles());
         shadow.appendChild(this.createSideBar());
-        // shadow.appendChild(this.getScripts());
+        shadow.appendChild(this.getScripts());
     } 
    
-    // getLinkHead() {
-    //     const links = document.createElement('link');
-    //     links.innerHTML = `
-    //     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
-    //     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
-    //     <link href="../assets/css/dashboard/index.css" rel="stylesheet">
-    //     `;
-    //     return links;
-    // }
+    getLinkHead() {
+        const links = document.createElement('link');
+        links.innerHTML = `
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+        <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+        <link href="../assets/css/dashboard/index.css" rel="stylesheet">
+        `;
+        return links;
+    }
 
 
     styles() {
@@ -118,15 +118,15 @@ class SibeBar extends HTMLElement {
         return sidebar;
     }
 
-    // getScripts() {
-    //     const script = document.createElement('script');
-    //     script.innerHTML = `
-    //     <script src="../assets/css/bootstrap/bootstrap.bundle.min.js"></script>
-    //     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="../assets/js/dashboard.js"></script>
-    //     `;
+    getScripts() {
+        const script = document.createElement('script');
+        script.innerHTML = `
+        <script src="../assets/css/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="../assets/js/dashboard.js"></script>
+        `;
 
-    //     return script;
-    // }
+        return script;
+    }
  }
 
 
