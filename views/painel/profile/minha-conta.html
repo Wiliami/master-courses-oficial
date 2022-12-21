@@ -6,11 +6,11 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Checkout example · Bootstrap v5.2</title>
+    <title>Minha conta</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
     <link href="../../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <script src="../../../Model/SideBar.js"></script>
+   
 
     <style>
       .bd-placeholder-img {
@@ -66,10 +66,44 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="../../../assets/css/form-validation.css" rel="stylesheet">
+    <link href="../../../assets/css/dashboard/index.css" rel="stylesheet">
   </head>
 
-  <side-bar></side-bar>
+  
   <body class="bg-light">
+    <!-- Container Sidebar -->
+    <div class="container-fluid">
+      <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+              <div class="position-sticky pt-3 sidebar-sticky">
+                  <ul class="nav flex-column">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">
+                              <span data-feather="home" class="align-text-bottom"></span>
+                              Dashboard
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./dashboard/admin/users/list.html">
+                              <span data-feather="user" class="align-text-bottom"></span>
+                              Usuários
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./dashboard/admin/courses/list.html">
+                              <span data-feather="book" class="align-text-bottom"></span>
+                              Cursos
+                          </a>
+                      </li>      
+                  </ul>
+              </div>
+          </nav>
+
+        </div>
+      </div>
+      <!-- Fim do container Sidebar -->
+
+
     <div class="container">
         <main class="mt-4">
             <div class="row g-5">
@@ -175,5 +209,7 @@
 
     <script src="../../../assets/css/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../../../assets/js/form-validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="../../assets/js/dashboard.js"></script>
+
   </body>
 </html>
