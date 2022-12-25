@@ -1,0 +1,21 @@
+{
+  "name": "rotas",
+  "homepage": "https://github.com/Wiliami/master-courses-oficial",
+  "authors": [
+    "wiliami <wiliaup97@gmail.com>"
+  ],
+  "description": "website courses",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "crossroads.js": "^0.12.2",
+    "hasher": "^1.2.0"
+  }
+}
