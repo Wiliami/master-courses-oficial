@@ -65,151 +65,124 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="../../../assets/css/form-validation.css" rel="stylesheet">
     <link href="../../../assets/css/dashboard/index.css" rel="stylesheet">
+    <link href="../../../assets/css/form-validation.css" rel="stylesheet">
   </head>
 
   
   <body class="bg-light">
-    <!-- Container Sidebar -->
+    <header class="py-3 mb-3 border-bottom">
+        <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+          <div class="dropdown">
+            <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            </a>
+          
+          </div>
+    
+          <div class="d-flex align-items-center">
+            <form class="w-100 me-3" role="search">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="flex-shrink-0 dropdown">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small shadow">
+                <li><a class="dropdown-item" href="../profile/minha-conta.html">Minha conta</a></li>
+                <li><a class="dropdown-item" href="../profile/reset-password.html">Mudar senha</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sair</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    
+    
+    <!-- Início do container Sidebar -->
     <div class="container-fluid">
       <div class="row">
-          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-              <div class="position-sticky pt-3 sidebar-sticky">
-                  <ul class="nav flex-column">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">
-                              <span data-feather="home" class="align-text-bottom"></span>
-                              Dashboard
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="./dashboard/admin/users/list.html">
-                              <span data-feather="user" class="align-text-bottom"></span>
-                              Usuários
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="./dashboard/admin/courses/list.html">
-                              <span data-feather="book" class="align-text-bottom"></span>
-                              Cursos
-                          </a>
-                      </li>      
-                  </ul>
-              </div>
-          </nav>
-
-        </div>
-      </div>
-      <!-- Fim do container Sidebar -->
-
-
-    <div class="container">
-        <main class="mt-4">
-            <div class="row g-5">
-                <div class="col-md-7 col-lg-8">
-                    <h4 class="mb-3">Minha conta</h4>
-                    <form class="needs-validation" novalidate>
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <label for="email" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="email" placeholder="">
-                            <div class="invalid-feedback">
-                                Please enter a valid email address for shipping updates.
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="address" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="address" placeholder="" required>
-                            <div class="invalid-feedback">
-                                Please enter your shipping address.
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="address2" class="form-label">Senha</label>
-                            <input type="text" class="form-control" id="address2" placeholder="">
-                        </div>
-
-                    </div>   
-
-                    <hr class="my-4">
-
-                    <div class="d-flex inline-block">
-                        <a href="../../dashboard/index.html" class="w-10 btn btn-outline-primary mt-2 mx-1"  type="submit">Voltar</a>
-                        <button class="w-20 btn btn-primary mt-2" type="submit">Salvar</button>
-                    </div>
-                    </form>
-                </div>
-            </div>
-        </main>
-
-        <!-- Inicio footer -->
-        <footer class="py-5" style="margin-top: 15%;">
-            <div class="row">
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-5 offset-md-1 mb-3">
-                <form>
-                <h5>Subscribe to our newsletter</h5>
-                <p>Monthly digest of what's new and exciting from us.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                    <label for="newsletter1" class="visually-hidden">Email address</label>
-                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                    <button class="btn btn-primary" type="button">Subscribe</button>
-                </div>
-                </form>
-            </div>
-            </div>
-
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-                </ul>
-            </div>
-        </footer>
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="position-sticky pt-3 sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../dashboard.html">
+                  <span data-feather="home" class="align-text-bottom"></span>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./admin/users/list.html">
+                  <span data-feather="user" class="align-text-bottom"></span>
+                  Usuários
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./admin/courses/list.html">
+                  <span data-feather="book" class="align-text-bottom"></span>
+                  Cursos
+                </a>
+              </li>      
+            </ul>
+          </div>
+        </nav>
     
-        <!-- Fim footer -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="container">
+            <main class="mt-4">
+                <div class="row g-5">
+                    <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3">Minha conta</h4>
+                        <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="email" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="email" placeholder="wiliamis oliveira" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address for shipping updates.
+                                </div>
+                            </div>
+    
+                            <div class="col-12">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="wiliamisoliveira@gmail.com" required>
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+    
+                            <div class="col-12">
+                                <label for="password" class="form-label">Senha</label>
+                                <input type="text" class="form-control" id="password" placeholder="senha123" required>
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+    
+                        </div>   
+    
+                        <hr class="my-4">
+    
+                        <div class="d-flex inline-block">
+                            <a href="../../dashboard.html" class="w-10 btn btn-outline-primary mt-2 mx-1"  type="submit">Voltar</a>
+                            <button class="w-20 btn btn-primary mt-2" type="submit">Salvar</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+          </main>
+      </div>
     </div>
+    <!-- Fim do container sidebar -->
+
+
 
     <script src="../../../assets/css/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- icons dashboard sidebar -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="../../../assets/js/dashboard.js"></script>
     <script src="../../../assets/js/form-validation.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="../../assets/js/dashboard.js"></script>
 
   </body>
 </html>
