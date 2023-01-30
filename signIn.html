@@ -17,24 +17,24 @@
         <link rel="stylesheet" href="../assets/css/forms/style.css">
     </head>
     <body style="background-color: #37517e;">
-        <div class="container mt-4">
+        <div class="container">
             <div class="row align-items-center vh-100">
-                <div class="col-md-10 mx-auto col-lg-5">
-                    <form class="p-4 p-md-5 border rounded-3 bg-light" id="form">
+                <div class="col-md-10 mx-auto col-lg-4">
+                    <form class="p-3 p-md-5 border rounded-3 bg-light" id="form">
                         <div class="d-flex justify-content-center">
                             <img src='../assets/img/apple-touch-icon.png' alt='logo'>
                         </div>
                         <div class="form-floating mb-3 mt-3">
                             <input type="email" class="form-control required" id="inputEmail" placeholder="E-mail" oninput="emailValidate()">
-                            <label for="inputEmail">Email</label>
-                            <span class="span-required">Digite um e-mail válido</span>
+                            <label for="inputEmail" style="font-size: 11px;">Email</label>
+                            <span class="span-required"  style="font-size: 10px;">Digite um e-mail válido</span>
                         </div>
                         <div class="form-floating d-flex justify-content-between mb-3">
                             <input type="password" class="form-control required"  id="inputPassword" placeholder="Senha" oninput="passwordValidate()">
-                            <label for="inputPassword">Senha</label>
+                            <label for="inputPassword" style="font-size: 11px;">Senha</label>
                             <!-- <i class="fa fa-eye" aria-hidden="true"></i> -->
                         </div>
-                        <span class="span-required">A senha deve ter no mínimo 8 caracteres</span>
+                        <span class="span-required"  style="font-size: 10px;">A senha deve ter no mínimo 8 caracteres</span>
                         
                         <!-- <div class="alert alert-danger text-center" role="alert">
                             E-mail ou senha incorreta!
@@ -43,15 +43,11 @@
                         
                         <div class="form-check mt-3">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+                            <label class="form-check-label" for="exampleCheck1"  style="font-size: 10px;">Lembrar-me</label>
                         </div>  
-                        <button type="submit" class="btn btn-get-started w-100 mt-3">Entrar</button>
-                        <p>
-                            <a href="./forgot-password.html" class="btn content w-100 mt-4">Esqueceu a senha?</a>
-                        </p>
-                        <p>
-                            <a href="./signup.html" class="btn content w-100">Criar conta</a>
-                        </p>
+                        <button type="submit" class="btn btn-get-started w-100 mt-3"  style="font-size: 10px;">Entrar</button>
+                            <a href="./forgot-password.html" class="btn content w-100"  style="font-size: 10px;">Esqueceu a senha?</a>
+                            <a href="./signup.html" class="btn content w-100"  style="font-size: 10px;">Criar conta</a>
                     </form>
                 </div>
             </div>
@@ -83,10 +79,10 @@
             btn.addEventListener('click', ()=>{
             let inputSenha = document.querySelector('#inputPassword');
             
-            if(inputSenha.getAttribute('type') == 'password'){
-                inputSenha.setAttribute('type', 'text')
+            if(inputSenha.getAttribute('type') == 'password') {
+                inputSenha.setAttribute('type', 'text');
             } else {
-                inputSenha.setAttribute('type', 'password')
+                inputSenha.setAttribute('type', 'password');
             }
             })
 
@@ -128,15 +124,16 @@
             };
 
 
-            console.log(compareData());
+        
 
             
             function compareData() {
                 if(campos[0].value != 'dudu@gmail.com' && campos[1].value.length != '12345678') {
-                    setErrorData(0);
+                    // setErrorData(0);
+                    console.log('usuário não encontrado');
                 }
                 else {
-                    window.location.href = '../views/dashboard/index.html';
+                    window.location.href = '../views/dashboard.html';
                 }
             }
 
