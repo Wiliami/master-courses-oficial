@@ -14,11 +14,11 @@
 
     <title>Document</title>
     
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/"> -->
 
     <link rel="stylesheet" href="../../../../assets/css/bootstrap/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap.min.css">
 
 
     <style>
@@ -72,7 +72,8 @@
           white-space: nowrap;
           -webkit-overflow-scrolling: touch;
         }
-      </style>  
+        </style>  
+        <link rel="stylesheet" href="../../../../assets/css/dashboard/index.css">
 </head>
 <body>
 
@@ -118,13 +119,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./painel/admin/users/list.html">
+                            <a class="nav-link" href="/">
                                 <span data-feather="user" class="align-text-bottom"></span>
                                 Usuários
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./painel/admin/courses/list.html">
+                            <a class="nav-link" href="../../../../views/painel/admin/courses/list.html">
                                 <span data-feather="book" class="align-text-bottom"></span>
                                 Cursos
                             </a>
@@ -135,10 +136,43 @@
   
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Seja bem-vindo, Wiliamis</h1>
+                    <h1 class="h2">Lista de usuários</h1>
                 </div>  
 
+                    <table id="example" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>NOME</th>
+                                <th>E-MAIL</th>
+                                <th>FUNÇÃO</th>
+                                <th>CAD. POR</th>
+                                <th>ATU. POR</th>
+                                <th>OPÇÕES</th>
+                            </tr>
+                        </thead>
 
+                        <tbody>
+                            <tr>
+                                <td>Wiliamis Oliveira</td>
+                                <td>wiliamis@gmail.com</td>
+                                <td>visitante</td>
+                                <td>Admin bot</td>
+                                <td>Admin bot</td>
+                                <td>***</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <th>NOME</th>
+                                <th>E-MAIL</th>
+                                <th>FUNÇÃO</th>
+                                <th>CAD. POR</th>
+                                <th>ATU. POR</th>
+                                <th>OPÇÕES</th>
+                            </tr>
+                        </tfoot>
+                    </table>
                 
             </main>
           
@@ -167,14 +201,14 @@
         crossorigin="anonymous"></script><script src="../../../../assets/js/dashboard.js"></script>
 
 
-        <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap.min.js"></script>
         <script type="text/javascript" language="javascript">
             $(document).ready(function () {
                 $('#example').DataTable();
             });
-        </script> -->
+        </script>
   
 </body>
 </html>
