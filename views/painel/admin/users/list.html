@@ -17,6 +17,8 @@
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/"> -->
 
     <link rel="stylesheet" href="../../../../assets/css/bootstrap/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap.min.css">
 
@@ -79,11 +81,11 @@
 
     <header class="py-3 mb-3 border-bottom">
         <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                 <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
                 </a>  
-            </div>
+            </div> -->
   
             <div class="d-flex align-items-center">
                 <form class="w-100 me-3" role="search">
@@ -137,6 +139,12 @@
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Lista de usuários</h1>
+                    <!-- <a href="../users/create.html">
+                        <button type="button" class="btn btn-primary">Cadastar usuário</button>
+                    </a> -->
+
+                    <a class="btn btn-primary" href="../users/create.html" role="button">Cadastar usuário</a>
+
                 </div>  
 
                     <table id="example" class="table table-striped table-bordered" style="width:100%">
@@ -158,7 +166,33 @@
                                 <td>visitante</td>
                                 <td>Admin bot</td>
                                 <td>Admin bot</td>
-                                <td>***</td>
+                                <td>
+                                    <i class='bx bxs-edit'></i>
+                                    <i class='bx bx-trash'></i>
+                                </td>
+                            
+                            </tr>
+                            <tr>
+                                <td>Raúl Andrade</td>
+                                <td>raul@gmail.com</td>
+                                <td>visitante</td>
+                                <td>Admin bot</td>
+                                <td>Admin bot</td>
+                                <td>
+                                    <i class='bx bxs-edit'></i>
+                                    <i class='bx bx-trash'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Carlos Silva</td>
+                                <td>carlos@gmail.com</td>
+                                <td>visitante</td>
+                                <td>Admin bot</td>
+                                <td>Admin bot</td>
+                                <td>
+                                    <i class='bx bxs-edit'></i>
+                                    <i class='bx bx-trash'></i>
+                                </td>
                             </tr>
                         </tbody>
 
